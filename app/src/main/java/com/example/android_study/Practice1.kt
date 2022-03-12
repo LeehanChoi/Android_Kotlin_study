@@ -87,4 +87,23 @@ fun checkNum(score : Int){
     }
 }
 
-// Expression Vs Statement
+// Expression(값을 만드는 것, 코틀린의 모든 함수) Vs Statement(어떤 것을 실행하도록 만드는 문장)
+/*
+// Statement 로 사용된 예
+when(score) { // when 은 스위치
+        0 -> println("this is 0")
+        1 -> println("this is 1")
+        2,3  -> println("this is 2 or 3")
+        else -> println("I don't know")
+    }
+
+// Expression으로 사용된 예 1
+var b = when(score){ // 이렇게도 짤 수 있음
+        1 -> 1
+        2 -> 2
+        else -> 3 // else 꼭 써줘야함
+    }
+
+// Expression으로 사용된 예 2
+fun condition2(a : Int, b : Int) = if(a>b) a else b
+ */
